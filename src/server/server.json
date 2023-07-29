@@ -1,0 +1,68 @@
+{
+    "resume":"A Pirâmide Alimentar é um tipo de gráfico que organiza os alimentos de acordo com suas funções e seus nutrientes.",
+    "description":"A Pirâmide Alimentar é um tipo de gráfico que organiza os alimentos de acordo com suas funções e seus nutrientes.  É importante ressaltar que a principal finalidade dessa organização, consiste em fornecer informações acerca de uma alimentação saudável e equilibrada.",
+    "pyramid":[
+        { 
+            "key":"alimentos_energéticos",
+            "groups":[1],
+            "keys":[["Carboidratos"]],
+            "foods":[[
+                "arroz",
+                "pão",
+                "batata", 
+                "massa",
+                "mandioca",
+                "cereais"]
+            ],
+            "description":[["Representa a base da pirâmide, indicando os alimentos que fornecem energia, pois ao serem consumidos os carboidratos são convertidos em açúcar no sangue.O consumo na forma integral é recomendado pelo número de fibras, vitaminas e minerais que deixam essa absorção mais lenta."]]
+            },
+            {
+                "key":"alimentos_reguladores",
+                "groups":[2, 3],
+                "keys":[
+                    ["Verduras","Legumes"],
+                    ["Frutas"]
+                ],
+                "foods":[
+                  ["brócolis", "couve", "repolho","abobrinha"],
+                  ["abacaxi", "maçã", "banana", "kiwi", "caju"] 
+                ],
+            
+                "description":[["Está acima da base da pirâmide, representando as fontes de fibras, vitaminas e minerais que ajudam no controle e funcionamento do corpo. O consumo de verduras e legumes melhora o hábito intestinal.s frutas estão ao lado das verduras e legumes, representando outro tipo de fonte de fibras, vitaminas e minerais."],
+                [ "As frutas estão ao lado das verduras e legumes, representando outro tipo de fonte de fibras, vitaminas e minerais. A frutose (açúcar da fruta) aumenta o nível de açúcar no sangue de forma rápida."]]
+            },
+            {
+                "key":"alimentos_construtores",
+                "groups":[4, 5 , 6],
+                "keys":[["Leite e derivados"],["Carnes e Ovos"],[ "Leguminosas","oleaginosas"]],
+                "foods":[
+                    ["queijo", "leite", "iogurtes"],
+                    ["peixe", "frango", "carne", "ovos"],
+                    ["feijão", "soja", "lentilha", "grão-de-bico", "castanhas"]
+                ],
+                "description":[["Localizado na parte intermediária da pirâmide, o leite e seus derivados são uma excelente fonte de cálcio, essencial para a constituição óssea e dos dentes. Além disso, também fornecem proteínas ao organismo."],
+                ["Assim como os leites e derivados, este grupo está na parte intermediária da pirâmide e representa a fonte de proteína de origem animal. Os alimentos deste grupo têm como característica serem ricos em ferro e vitaminas B6 e B12, prevenindo anemias. "]]
+            },
+            {
+                "key":"alimentos_energéticos_extras",
+                "groups":[7,8],
+                "keys":[["Óleos", "Gorduras"],["Doces","Açúcares"]],
+                "foods":[[
+                    "azeite",
+                    "manteiga",
+                    "óleo de soja"
+                ],[
+                    "açúcar", "mel", "chocolate", "sorvete", "bolo"
+                ]],
+                "description":[["Os óleos e gorduras fazem parte do topo da pirâmide. Os alimentos deste grupo são fontes de energia, além de serem responsáveis pelo transporte de vitaminas do complexo B. São ricos em calorias e seu consumo deve ser controlado. São alimentos desse grupo: azeite, manteiga, óleo de soja, "],[
+                    "Dividindo o topo da pirâmide alimentar, estão os açúcares e doces. São alimentos ricos em carboidratos simples, não possuem fibras e apresentam poucos nutrientes. Seu consumo deve ser moderado."
+
+                ]]
+            }
+            
+          
+        ]
+
+       
+    
+}
