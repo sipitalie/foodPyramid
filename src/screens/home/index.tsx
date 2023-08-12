@@ -23,6 +23,21 @@ export function Home(){
     const [modalIsOpen,setModalIsOpen]=useState(false)
     const foods=foodPyramid().pyramid
     const paddingBottom=useKeyboardHeight()
+    
+    
+    const  _keysFoods=()=>{
+        let keys:string[]=[]
+        foods.map((item)=>{
+        for(let keys_group of  item.keys){
+            for(let _keys of  keys_group){
+                keys.push(_keys)
+            } 
+        }})
+        return keys
+    }
+    const keysFoods=_keysFoods()
+
+    
    
 
     const renderItem=useCallback(({index,item}:{index:number,item:ItemProps})=>{
@@ -51,16 +66,40 @@ export function Home(){
                 <Abstract  handlerModal={handlerModal}  p={foods_pyramid.resume}/>
                 <InputSerach inputHandler={setSearchFood} inputState={ searchfood}/>
                 </Header>
+                <View>
+                <FlatList
+                        data={keysFoods}
+                        horizontal
+                        keyExtractor={(item, index)=>String(index)}
+                        showsHorizontalScrollIndicator={false}
+                        contentContainerStyle={{
+                            paddingVertical:12,
+                            paddingLeft:6,
+                            paddingRight:22
+                            }}
+                        renderItem={({item})=><View style={{
+                            height:52,
+                            justifyContent:"center",
+                            borderRadius:12,
+                            borderColor:"gray",
+                            borderWidth:1,
+                            paddingHorizontal:12,
+                            marginLeft:8
+
+                        }}><Text>{item}</Text></View>}
+                    />
+
+                </View>
                 <View style={{
                     width:"100%",
                     justifyContent:"center",
                     paddingHorizontal:16
                     }}>
                     <FlatList
-                    contentContainerStyle={{
+                        contentContainerStyle={{
                         paddingTop:20,
-                        paddingBottom:130+paddingBottom,
-                    }}
+                        paddingBottom:200+paddingBottom,
+                        }}
                         data={foods}
                         keyExtractor={(item)=>item.key}
                         showsVerticalScrollIndicator={false}
