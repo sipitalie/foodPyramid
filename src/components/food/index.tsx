@@ -9,7 +9,7 @@ type PropsFood={
 export function Food({food,id}:PropsFood){
     return (
     <View key={id} style={{
-        width:120,                    
+        width:126,                    
         height:120,
         borderColor:"gray",
         borderRadius:8,
